@@ -112,7 +112,7 @@ a:active {
 .banner {
   z-index: 1;
   text-align: center;
-  background-color: var(--clr-1);
+  background-color: white;
 }
 
 .banner img {
