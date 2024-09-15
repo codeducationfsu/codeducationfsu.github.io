@@ -37,33 +37,128 @@
         <img src="assets/img/mario_kart_winner (1).png" alt="Banner Image">
         <div class="bottom-left"><b>Codeducation Events</b></div>
     </div>
-    
-<!--These are for the three event cards in the middle-->
-    <div class="events" id="events">
-        <h2>Upcoming Events</h2>
-        <div class="event-card">
-            <img src="assets/img/event1.png" alt="Event 1 Image">
-            <div class="event-content">
-                <h3>Event 1</h3>
-                <p>Details about Event 1</p>
-            </div>
+<!--Code for upcoming events card-->
+    <div class="card">
+        <div class="card-image">
+            <img src="assets/img/gbm_flyer.png" alt="gbm_flyer"> 
         </div>
-        <div class="event-card">
-            <img src="assets/img/event2.png" alt="Event 2 Image">
-            <div class="event-content">
-                <h3>Event 2</h3>
-                <p>Details about Event 2</p>
-            </div>
-        </div>
-        <div class="event-card">
-            <img src="assets/img/event3.png" alt="Event 3 Image">
-            <div class="event-content">
-                <h3>Event 3</h3>
-                <p>Details about Event 3</p>
-            </div>
+        <div class="card-content">
+            <h2>Post-Grad Panel</h2>
+            <p>Let's help you ease the post-grad transition! Plus some more information about the event to grab attention</p>
+            <ul class="event-details">
+                <li><span>📅</span> March 27, 2024</li>
+                <li><span>📍</span> Innovation Hub Room 126</li>
+                <li><span>⏰</span> 6:30-7:30pm</li>
+            </ul>
         </div>
     </div>
     
+    <style>
+        .card {
+            display: flex;
+            width: 400px; 
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+            background-color: #ffd94f;
+            color: #000;
+            transition: box-shadow 0.3s ease; 
+            margin: 20px auto; 
+        }
+    
+        .card:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 1); 
+        }
+    
+        .card-image {
+            flex: 1;
+            max-width: 50%; 
+        }
+    
+        .card-image img {
+            width: 100%; 
+            height: auto; 
+            object-fit: cover;
+            display: block;
+        }
+    
+        .card-content {
+            flex: 1;
+            padding: 10px; 
+        }
+    
+        .card-content h2 {
+            margin: 0 0 8px;
+            font-size: 1.1em; 
+        }
+    
+        .card-content p {
+            font-size: 0.8em; 
+            margin-bottom: 8px; 
+        }
+    
+        .event-details {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .event-details li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+    
+        .event-details span {
+            margin-right: 8px; 
+        }
+    </style>
+    <!--The three event cards-->
+<div class="eventier">
+    <div class="eventier-image">
+        <img src="c:\Users\nicks\Downloads\Capture.JPG" alt="Post-Grad Panel">
+    </div>
+    <div class="eventier-content">
+        <h2>Event 1</h2>
+        <p>Summary of events as a teaser and is a continuation of the event information from the home page.</p>
+        <ul class="eventier-details">
+            <li><span>📅</span> March 27, 2024</li>
+            <li><span>📍</span> Innovation Hub Room 126</li>
+            <li><span>⏰</span> 6:30-7:30pm</li>
+        </ul>
+    </div>
+  </div>
+  <!--Second-->
+  <div class="eventier">
+    <div class="eventier-image">
+        <img src="c:\Users\nicks\Downloads\Capture.JPG" alt="Post-Grad Panel">
+    </div>
+    <div class="eventier-content">
+        <h2>Event 2</h2>
+        <p>Summary of events as a teaser and is a continuation of the event information from the home page.</p>
+        <ul class="eventier-details">
+            <li><span>📅</span> March 27, 2024</li>
+            <li><span>📍</span> Innovation Hub Room 126</li>
+            <li><span>⏰</span> 6:30-7:30pm</li>
+        </ul>
+    </div>
+  </div>
+  <!--Third-->
+  <div class="eventier">
+    <div class="eventier-image">
+        <img src="c:\Users\nicks\Downloads\Capture.JPG" alt="Post-Grad Panel">
+    </div>
+    <div class="eventier-content">
+        <h2>Event 3</h2>
+        <p>Summary of events as a teaser and is a continuation of the event information from the home page.</p>
+        <ul class="eventier-details">
+            <li><span>📅</span> March 27, 2024</li>
+            <li><span>📍</span> Innovation Hub Room 126</li>
+            <li><span>⏰</span> 6:30-7:30pm</li>
+        </ul>
+    </div>
+  </div>
+
 <!--The footer pages on the bottom for contacts-->
     <div class="contact">
         <div class="contact-icons">
@@ -74,3 +169,64 @@
         </div>
     </div>
 </body>
+<!--The css for the three cards-->
+<style>
+    .eventier {
+      display: flex;
+      width: 670px; 
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+      background-color: #FFFFFF;
+      color: #000;
+      transition: box-shadow 0.3s ease; 
+      margin: 20px auto; 
+    }
+    
+    .eventier:hover {
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 1); 
+    }
+    
+    .eventier-image {
+      flex: 1;
+      max-width: 40%; 
+    }
+    
+    .eventier-image img {
+      width: 100%; 
+      height: auto; 
+      object-fit: cover;
+      display: block;
+    }
+    
+    .eventier-content {
+      flex: 2; 
+      padding: 20px; 
+    }
+    
+    .eventier-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.5em; 
+    }
+    
+    .eventier-content p {
+      font-size: 0.9em;
+      margin-bottom: 15px; 
+    }
+    
+    .eventier-details {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .eventier-details li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    
+    .eventier-details span {
+      margin-right: 10px; 
+    }
+    </style>
