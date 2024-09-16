@@ -271,29 +271,6 @@ a:active {
   /* Adjusted for better fit */
 }
 
-/*the outer yellow background*/
-.contact-bg {
-  padding: 3% 15% 6%;
-  top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: linear-gradient(to bottom,
-      white 0%,
-      white 15%,
-      #fdc40b 15%,
-      #fdc40b 100%);
-}
-
-.contact-header {
-  margin: 7% 30% 0% 10%;
-}
-
-.contact-header h1 {
-  font-size: 45px;
-}
-
 title {
   font-size: 45px;
 }
