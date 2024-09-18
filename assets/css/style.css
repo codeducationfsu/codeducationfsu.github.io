@@ -153,22 +153,34 @@ a:active {
 
 /* css for about section on home page */
 .container2 {
-  left: 0;
-  right: 0;
   padding: 0;
-  align-items: center;
+
 }
 
-.container2 h2 {
+.container2 h1 {
   text-align: center;
+ color: white;
+}
 
+.container2 p{
+  color: white;
 }
 
 .container2 img {
   max-width: 100%;
   height: auto;
   max-height: 250px;
-  border-radius: 50%;
+}
+
+.float-container {
+  padding: 20px;
+  color: white;
+}
+
+.float-child{
+  width: 50%;
+  float: left;
+  padding: 20px;
 }
 
 /* css for main section of home page */
@@ -206,19 +218,17 @@ a:active {
       #624db0 100%);
 }
 
-/*the outer purple background for the about section at the bottom of the home page*/
+/*the outer purple background for the projects section at the bottom of the home page*/
 .section-body2 {
-  padding: 3% 25% 6%;
+  padding: 3%;
   top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: linear-gradient(to bottom,
-      white 0%,
-      white 30%,
-      #624db0 30%,
-      #624db0 100%);
+  background: var(--clr-4);
+  
+}
+
+.section-body2 h2{
+  color: white;
 }
 
 /*the inner yellow shape with rounded corners*/
@@ -227,7 +237,7 @@ a:active {
   border-radius: 12px;
   float: center;
   text-align: center;
-  background: var(--clr-3);
+  background: white;
 }
 
 .section:nth-child(even) {
@@ -293,6 +303,10 @@ title {
 
 .contact-icons img {
   height: 30px;
+}
+
+.about-section{
+
 }
 
 .about {
