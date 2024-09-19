@@ -135,6 +135,14 @@ html {
     object-fit: cover;
   }
 
+  .purple-highlight {
+    background-color: purple;
+    color: white; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+}
+
+
 .board-section {
     margin: 40px 0;
     padding: 0 20px;
@@ -182,7 +190,12 @@ html {
     color: black;
   }
   
-  /* who we are section */
+
+  .highlight {
+    background-color: var(--clr-3);
+    padding: 0 5px; 
+    display: inline-block; 
+}
   .who-we-are {
     background-color: #f9f9f9;
     border-radius: 50px;
@@ -196,7 +209,6 @@ html {
 .who-we-are h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    background-color: var(--clr-3);
     text-align: left;
 }
   
