@@ -1,7 +1,23 @@
+/* the top header for the page */
 .contact-header {
-  margin: 7% 30% 0% 10%;
+  margin: 7%;
 }
 
 .contact-header h1 {
   font-size: 45px;
+}
+
+/*the outer yellow background*/
+.contact-bg {
+  padding: 0% 15% 6%;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom,
+      white 0%,
+      white 15%,
+      #fdc40b 15%,
+      #fdc40b 100%);
 }

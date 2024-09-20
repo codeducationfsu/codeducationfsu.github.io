@@ -153,22 +153,34 @@ a:active {
 
 /* css for about section on home page */
 .container2 {
-  left: 0;
-  right: 0;
   padding: 0;
-  align-items: center;
+
 }
 
-.container2 h2 {
+.container2 h1 {
   text-align: center;
+ color: white;
+}
 
+.container2 p{
+  color: white;
 }
 
 .container2 img {
   max-width: 100%;
   height: auto;
   max-height: 250px;
-  border-radius: 50%;
+}
+
+.float-container {
+  padding: 20px;
+  color: white;
+}
+
+.float-child{
+  width: 50%;
+  float: left;
+  padding: 20px;
 }
 
 /* css for main section of home page */
@@ -206,19 +218,17 @@ a:active {
       #624db0 100%);
 }
 
-/*the outer purple background for the about section at the bottom of the home page*/
+/*the outer purple background for the projects section at the bottom of the home page*/
 .section-body2 {
-  padding: 3% 25% 6%;
+  padding: 3%;
   top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: linear-gradient(to bottom,
-      white 0%,
-      white 30%,
-      #624db0 30%,
-      #624db0 100%);
+  background: var(--clr-4);
+  
+}
+
+.section-body2 h2{
+  color: white;
 }
 
 /*the inner yellow shape with rounded corners*/
@@ -227,7 +237,7 @@ a:active {
   border-radius: 12px;
   float: center;
   text-align: center;
-  background: var(--clr-3);
+  background: white;
 }
 
 .section:nth-child(even) {
@@ -269,29 +279,6 @@ a:active {
   margin: 20px 0;
   max-height: 250px;
   /* Adjusted for better fit */
-}
-
-/*the outer yellow background*/
-.contact-bg {
-  padding: 3% 15% 6%;
-  top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: linear-gradient(to bottom,
-      white 0%,
-      white 15%,
-      #fdc40b 15%,
-      #fdc40b 100%);
-}
-
-.contact-header {
-  margin: 7% 30% 0% 10%;
-}
-
-.contact-header h1 {
-  font-size: 45px;
 }
 
 title {
@@ -391,80 +378,4 @@ title {
   border-radius: 5px;
 }
 
-/* for about us page */
-.board-section {
-  margin: 40px 0;
-  padding: 0 20px;
-  /* Adds padding to ensure spacing from edges */
-}
 
-.board-section h2 {
-  color: white;
-  margin-bottom: 20px;
-  text-align: center;
-  /* Center-aligns the heading */
-}
-
-
-.board-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Individual grid item */
-.board-member {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.board-member img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-}
-
-.board-member h3 {
-  margin: 10px 0;
-  color: black;
-}
-
-.board-member p {
-  color: black;
-}
-
-/* who we are section */
-.who-we-are {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 40px 20px;
-  background-color: var(--clr-1);
-  gap: 20px;
-}
-
-.who-we-are h2 {
-  grid-column: span 2;
-  color: var(--clr-4);
-  text-align: left;
-}
-
-.who-we-are-content {
-  text-align: left;
-}
-
-.contact-codeed-logo {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.contact-codeed-logo img {
-  max-width: 200px;
-  border-radius: 10px;
-}

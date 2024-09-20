@@ -1,0 +1,250 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  :root {
+    --clr-1: #f4f4f4;
+    --clr-3: #fdc40b;
+    --clr-4: #624db0;
+    --clr-5: #3e246e;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body p {
+    font-weight: 300;
+    font-family: "Open sans", sans-serif;
+  }
+  
+  /* font */
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* highlight */
+  mark {
+    background-color: var(--clr-3);
+    margin: 3px;
+  }
+  
+  mark2 {
+    background-color: var(--clr-4);
+    margin: 3px;
+  }
+  
+  a {
+    color: black;
+    text-align: center;
+    text-decoration-color: black;
+  }
+  
+  li {
+    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+    top: 0;
+    left: 0;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--clr-4);
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: white;
+    padding: 1%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  
+  .header img {
+    z-index: 4;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    left: 4%;
+    position: fixed;
+  }
+
+  .bottom-left {
+    z-index: 2;
+    font-family: "Roboto";
+    position: absolute;
+    left: 3%;
+    top: 55%;
+    bottom: 45%;
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .banner {
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-height: 550px;
+    /* Adjusted for better fit */
+    object-fit: cover;
+  }
+
+  .purple-highlight {
+    background-color: purple;
+    color: white; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+}
+
+
+.board-section {
+    margin: 40px 0;
+    padding: 0 20px;
+    /* Adds padding to ensure spacing from edges */
+  }
+  
+  .board-section h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Center-aligns the heading */
+  }
+  
+  
+  .board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual grid item */
+  .board-member {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board-member img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .board-member h3 {
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .board-member p {
+    color: black;
+  }
+  
+
+  .highlight {
+    background-color: var(--clr-3);
+    padding: 0 5px; 
+    display: inline-block; 
+}
+  .who-we-are {
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.who-we-are h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+  
+.who-we-are p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: left;
+}
+  
+  .contact-codeed-logo {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .contact-codeed-logo img {
+    max-width: 200px;
+    border-radius: 10px;
+  }
+  
+.contact {
+  background-color: #151515;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-icons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact-icons img {
+  height: 30px;
+}
