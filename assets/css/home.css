@@ -64,6 +64,7 @@
   .section {
     left: 0;
     right: 0;
+    margin: 3%;
     padding: 10px 80px;
     display: flex;
     align-items: center;
@@ -74,6 +75,7 @@
 /*the inner white shape with rounded corners and a black border*/
 .inSection {
     padding: 2%;
+    margin: 2%;
     border: 1px solid black;
     border-radius: 15px;
     float: center;
@@ -97,7 +99,8 @@
   
   /*the outer purple background for the projects section at the bottom of the home page*/
   .section-body2 {
-    padding: 3%;
+    padding: 5% 8%;
+    
     top: 20px;
     display: flex;
     background: var(--clr-4);
