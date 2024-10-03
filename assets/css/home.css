@@ -41,6 +41,7 @@
   
   .container2 p{
     color: white;
+    text-align: center;
   }
   
   .container2 img {
@@ -51,13 +52,52 @@
   
   .float-container {
     padding: 20px;
-    color: white;
+    margin: 3%;
+    width: 100%;
   }
   
   .float-child{
-    width: 50%;
+    box-shadow: 6px 6px;
+    border: 2px solid black;
+    border-radius: 12px;  
+    width: 40%;
     float: left;
     padding: 20px;
+    margin: 20px;
+    background-color: white;
+  }
+
+  .float-child p{
+    color: black;
+    text-align: left;
+
+  }
+
+.float-child h2{
+  color: black;
+  text-decoration: solid;
+  text-align: left;
+
+}
+
+  .float-image img{
+    box-shadow: 6px 6px;
+    border: 2px solid black;
+    border-radius: 12px;  
+    float: left;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .float-child a{
+    text-align: left;
+    text-decoration: underline;
+    color: #5271ff;
+  }
+
+  .float-child a:hover {
+    color: var(--clr-4);
   }
   
   /* css for main section of home page */
