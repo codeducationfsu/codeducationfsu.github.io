@@ -1,0 +1,163 @@
+
+/* css for events cards on home page */
+.container {
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 1% 5% 1% 9%;
+  }
+  
+  .container h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .container p {
+    margin-left: 2%;
+  }
+  
+  .icons {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  
+  /* css for about section on home page */
+  .container2 {
+    padding: 0;
+  
+  }
+  
+  .container2 h1 {
+    text-align: center;
+   color: white;
+  }
+  
+  .container2 p{
+    color: white;
+  }
+  
+  .container2 img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  
+  .float-container {
+    padding: 20px;
+    color: white;
+  }
+  
+  .float-child{
+    width: 50%;
+    float: left;
+    padding: 20px;
+  }
+  
+  /* css for main section of home page */
+  .section {
+    left: 0;
+    right: 0;
+    margin: 3%;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+/*the inner white shape with rounded corners and a black border*/
+.inSection {
+    padding: 2%;
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 15px;
+    float: center;
+    background: white;
+  }
+  
+  /*the outer purple background*/
+  .section-body {
+    padding: 8% 15% 6%;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom,
+        white 0%,
+        white 15%,
+        #624db0 15%,
+        #624db0 100%);
+  }
+  
+  /*the outer purple background for the projects section at the bottom of the home page*/
+  .section-body2 {
+    padding: 5% 8%;
+    
+    top: 20px;
+    display: flex;
+    background: var(--clr-4);
+    
+  }
+  
+  .section-body2 h2{
+    color: white;
+  }
+  
+  /*the inner yellow shape with rounded corners*/
+  .inSection2 {
+    padding: 1%;
+    border-radius: 12px;
+    float: center;
+    text-align: center;
+    background: white;
+  }
+  
+  .section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .section-header {
+    text-align: center;
+  }
+  
+  .section-content,
+  .section-img {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .section-content2 {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .section-content {
+    text-align: left;
+  }
+  
+  .section-content2 {
+    text-align: right;
+  }
+  
+  .section-img {
+    text-align: center;
+  }
+  
+  .section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    max-height: 250px;
+    /* Adjusted for better fit */
+  }
+    

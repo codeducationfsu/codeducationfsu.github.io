@@ -21,3 +21,57 @@
       #fdc40b 15%,
       #fdc40b 100%);
 }
+
+/* css for main section of home page */
+.section {
+    left: 0;
+    right: 0;
+    margin: 3%;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+/*the inner white shape with rounded corners and a black border*/
+.inSection {
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 15px;
+    float: center;
+    background: white;
+  }
+
+.section-content,
+.section-img {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .section-content2 {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .section-content {
+    text-align: left;
+  }
+  
+  .section-content2 {
+    text-align: right;
+  }
+   
+  .section-img {
+    text-align: center;
+  }
+  
+  .section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    max-height: 250px;
+    /* Adjusted for better fit */
+  }
