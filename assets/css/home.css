@@ -59,11 +59,11 @@
   .float-child{
     box-shadow: 6px 6px;
     border: 2px solid black;
-    border-radius: 12px;  
+    border-radius: 15px;  
     width: 40%;
     float: left;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
   }
 
@@ -73,8 +73,8 @@
 
   }
 
-.float-child h2{
-  color: black;
+.float-child h3{
+  color: rgb(1, 1, 1);
   text-decoration: solid;
   text-align: left;
 
@@ -83,11 +83,11 @@
   .float-image img{
     box-shadow: 6px 6px;
     border: 2px solid black;
-    border-radius: 12px;  
+    border-radius: 15px;  
     float: left;
-    margin: 20px;
-    width: 400px;
-    height: 400px;
+    margin: 10px;
+    width: 30%;
+    height: 200px;
   }
 
   .float-child a{
