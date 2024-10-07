@@ -5,6 +5,7 @@
     right: 0;
     align-items: center;
     padding: 1% 5% 1% 9%;
+    margin: 2%;
   }
   
   .container h2 {
@@ -65,6 +66,8 @@
     padding: 20px;
     margin: 10px;
     background-color: white;
+    min-height: 25%;
+    height: 210px;
   }
 
   .float-child p{
@@ -77,18 +80,7 @@
   color: rgb(1, 1, 1);
   text-decoration: solid;
   text-align: left;
-
 }
-
-  .float-image img{
-    box-shadow: 6px 6px;
-    border: 2px solid black;
-    border-radius: 15px;  
-    float: left;
-    margin: 10px;
-    width: 30%;
-    height: 200px;
-  }
 
   .float-child a{
     text-align: left;
@@ -99,6 +91,45 @@
   .float-child a:hover {
     color: var(--clr-4);
   }
+  
+/* Clear floats after the columns */
+.float-child:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .float-child {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.float-image{
+  margin-left: 7%;
+}
+
+  .float-image img{
+    box-shadow: 6px 6px;
+    border: 2px solid black;
+    border-radius: 15px;  
+    float: left;
+    margin: 10px;
+    height: 25%;
+    width: 25%;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .float-image {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }  
   
   /* css for main section of home page */
   .section {
