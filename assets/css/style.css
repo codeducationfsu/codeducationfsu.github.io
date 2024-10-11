@@ -152,7 +152,7 @@ a:active {
 
 /* Remove extra left and right margins, due to padding */
 .card-row {
-  margin: 0 -20px;
+  width: 100%;
 }
 
 .card-icon img{

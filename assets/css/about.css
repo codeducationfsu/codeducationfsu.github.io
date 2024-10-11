@@ -180,6 +180,18 @@ html {
     max-width: 150px;
     height: auto;
   }
+
+  .description {
+    display: none; 
+}
+
+.board-member:hover .description {
+  display: block; 
+}
+
+.board-member:hover {
+  transform: scale(1.05); 
+}
   
   .board-member h3 {
     margin: 10px 0;
@@ -213,7 +225,7 @@ html {
 }
   
 .who-we-are p {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     line-height: 1.5;
     margin-bottom: 30px;
     text-align: left;

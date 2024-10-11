@@ -1,203 +1,240 @@
+:root {
+  --clr-1: #f4f4f4;
+  --clr-3: #fdc40b;
+  --clr-4: #624db0;
+  --clr-5: #3e246e;
+}
 
 /* css for events cards on home page */
 .container {
-    left: 0;
-    right: 0;
-    align-items: center;
-    padding: 1% 5% 1% 9%;
-  }
-  
-  .container h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .container p {
-    margin-left: 2%;
-  }
-  
-  .icons {
-    max-width: 100%;
-    height: auto;
-    max-height: 250px;
-  }
-  
-  .container img {
-    max-width: 100%;
-    height: auto;
-    max-height: 250px;
-  }
-  
-  /* css for about section on home page */
-  .container2 {
-    padding: 0;
-  
-  }
-  
-  .container2 h1 {
-    text-align: center;
-   color: white;
-  }
-  
-  .container2 p{
-    color: white;
-    text-align: center;
-  }
-  
-  .container2 img {
-    max-width: 100%;
-    height: auto;
-    max-height: 250px;
-  }
-  
-  .float-container {
-    padding: 20px;
-    margin: 3%;
-    width: 100%;
-  }
-  
-  .float-child{
-    box-shadow: 6px 6px;
-    border: 2px solid black;
-    border-radius: 12px;  
-    width: 40%;
-    float: left;
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-  }
-
-  .float-child p{
-    color: black;
-    text-align: left;
-
-  }
-
-.float-child h2{
-  color: black;
-  text-decoration: solid;
-  text-align: left;
-
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 1% 5% 1% 9%;
+  margin: 2% 0 2% 0;
+  width: 85%;
 }
 
-  .float-image img{
-    box-shadow: 6px 6px;
-    border: 2px solid black;
-    border-radius: 12px;  
-    float: left;
-    margin: 20px;
-    width: 400px;
-    height: 400px;
-  }
+.container h2 {
+  text-align: center;
+  font-size: 30px;
+}
 
-  .float-child a{
-    text-align: left;
-    text-decoration: underline;
-    color: #5271ff;
-  }
+.container p {
+  margin-left: 2%;
+}
 
-  .float-child a:hover {
-    color: var(--clr-4);
+.icons {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+}
+
+/* css for about section on home page */
+.container2 {
+  padding: 0;
+  align-items: center;
+  width: 100%;
+}
+
+.container2 h1 {
+  text-align: center;
+ color: white;
+}
+
+.container2 p{
+  color: white;
+  text-align: center;
+}
+
+.container2 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+}
+
+.float-container {
+  padding: 20px;
+  margin: 3%;
+  width: 100%;
+}
+
+.float-child{
+  box-shadow: 6px 6px;
+  border: 2px solid black;
+  border-radius: 15px;  
+  width: 45%;
+  float: left;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  min-height: 25%;
+  height: 210px;
+}
+
+.float-child p{
+  color: black;
+  text-align: left;
+}
+
+.float-child h3{
+color: rgb(1, 1, 1);
+text-decoration: solid;
+text-align: left;
+}
+
+.float-child a{
+  text-align: left;
+  text-decoration: underline;
+  color: #5271ff;
+}
+
+.float-child a:hover {
+  color: var(--clr-4);
+}
+
+/* Clear floats after the columns */
+.float-child:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+.float-child {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+}
+
+.float-image{
+margin-left: 5%;
+}
+
+.float-image img{
+  box-shadow: 6px 6px;
+  border: 2px solid black;
+  border-radius: 15px;  
+  float: left;
+  margin: 10px;
+  height: 27%;
+  width: 27%;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .float-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* css for main section of home page */
-  .section {
-    left: 0;
-    right: 0;
-    margin: 3%;
-    padding: 10px 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+}  
+
+/* css for main section of home page */
+.section {
+  left: 0;
+  right: 0;
+  margin: 3%;
+  padding: 10px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 /*the inner white shape with rounded corners and a black border*/
 .inSection {
-    padding: 2%;
-    margin: 2%;
-    border: 1px solid black;
-    border-radius: 15px;
-    float: center;
-    background: white;
-  }
+  padding: 2%;
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 15px;
+  float: center;
+  background: white;
+}
+
+/*the outer purple background*/
+.section-body {
+  padding: 8% 15% 6%;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom,
+      white 0%,
+      white 15%,
+      #624db0 15%,
+      #624db0 100%);
+}
+
+/*the outer purple background for the projects section at the bottom of the home page*/
+.section-body2 {
+  padding: 5% 8%;
+  top: 20px;
+  display: flex;
+  background: var(--clr-4);
+  left: 1px;
+}
+
+.section-body2 h2{
+  color: white;
+}
+
+/*the inner yellow shape with rounded corners*/
+.inSection2 {
+  padding: 1%;
+  border-radius: 12px;
+  float: center;
+  text-align: center;
+  background: white;
+}
+
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-content,
+.section-img {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.section-content2 {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.section-content {
+  text-align: left;
+}
+
+.section-content2 {
+  text-align: right;
+}
+
+.section-img {
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  max-height: 250px;
+  /* Adjusted for better fit */
+}
   
-  /*the outer purple background*/
-  .section-body {
-    padding: 8% 15% 6%;
-    top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: linear-gradient(to bottom,
-        white 0%,
-        white 15%,
-        #624db0 15%,
-        #624db0 100%);
-  }
-  
-  /*the outer purple background for the projects section at the bottom of the home page*/
-  .section-body2 {
-    padding: 5% 8%;
-    
-    top: 20px;
-    display: flex;
-    background: var(--clr-4);
-    
-  }
-  
-  .section-body2 h2{
-    color: white;
-  }
-  
-  /*the inner yellow shape with rounded corners*/
-  .inSection2 {
-    padding: 1%;
-    border-radius: 12px;
-    float: center;
-    text-align: center;
-    background: white;
-  }
-  
-  .section:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  
-  .section-header {
-    text-align: center;
-  }
-  
-  .section-content,
-  .section-img {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-  }
-  
-  .section-content2 {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-  }
-  
-  .section-content {
-    text-align: left;
-  }
-  
-  .section-content2 {
-    text-align: right;
-  }
-  
-  .section-img {
-    text-align: center;
-  }
-  
-  .section img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-    max-height: 250px;
-    /* Adjusted for better fit */
-  }
-    
