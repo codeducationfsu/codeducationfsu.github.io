@@ -146,14 +146,39 @@ html {
 .board-section {
     margin: 40px 0;
     padding: 0 20px;
-    /* Adds padding to ensure spacing from edges */
   }
   
   .board-section h2 {
-    color: white;
+    font-size: 50px;
+    color: black;
     margin-bottom: 20px;
+    padding-bottom: 30px;
     text-align: center;
-    /* Center-aligns the heading */
+    font-weight: bold;
+  }
+  
+  .eboard-section {
+    background-color: #fdc40b;
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .eboard-section {
+    background-color: #fdc40b;
+    margin: 40px 0;
+    padding: 40px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+  .eboard-member img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
   }
   
   
@@ -191,6 +216,8 @@ html {
 
 .board-member:hover {
   transform: scale(1.05); 
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
   
   .board-member h3 {
