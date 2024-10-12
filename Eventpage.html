@@ -42,6 +42,7 @@
     </div>
 <!--Code for upcoming events card-->
 <div class="main-container">
+    <div class="main">
     <div class="card">
         <div class="card-image">
             <img src="assets/img/gbm_flyer.png" alt="gbm_flyer"> 
@@ -56,8 +57,12 @@
             </ul>
         </div>
     </div>
+</div>
+<div class="main">
+
     <div class="calendar">
         <iframe src="https://calendar.google.com/calendar/embed?src=d6c5a816c231ac9e5a9d1b3b35cf7d9aefb8457b0c3cac0501e07adfb993fe9c%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>
+    </div>
     </div>
     </div>
     <style>
@@ -74,6 +79,7 @@
             color: #000;
             transition: box-shadow 0.3s ease; 
             margin: 20px auto; 
+            float: right;
         }
     
         .card:hover {
@@ -117,7 +123,13 @@
             justify-content: space-around;
             align-items: flex-start;
             margin-top: 20px;
+            width: 100%;
         }
+
+        .main{
+    width: 50%;
+padding: 0 5% 0 5%;            
+}
     
         .event-details li {
             display: flex;
@@ -132,14 +144,14 @@
             background-color: white;
             padding: 10px;
             border-radius: 15px;
-            width: 300px;
+            width: 400px;
             box-shadow: 0 8px rgba(0, 0, 0, 0.8);
         }
         iframe{
             border-radius: 15px;
             border: none;
-            width: 250px;
-            height: 300px;
+            width: 350px;
+            height: 400px;
             margin-top: 15px;
         }
     </style>
