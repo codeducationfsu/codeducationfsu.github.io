@@ -1,6 +1,7 @@
 /* the top header for the page */
 .contact-header {
   margin: 7%;
+  margin-bottom: 5%;
 }
 
 .contact-header h1 {
@@ -43,6 +44,10 @@
     background: white;
   }
 
+  .section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
 .section-content,
 .section-img {
     flex: 1;
@@ -58,12 +63,33 @@
   
   .section-content {
     text-align: left;
+    margin-right: 5%;
   }
   
   .section-content2 {
     text-align: right;
   }
-   
+  
+.section-content a {
+  font-weight: 300;
+  font-family: "Open sans", sans-serif;
+  color: #624db0;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+}
+
+.section-content2 a {
+  font-weight: 300;
+  font-family: "Open sans", sans-serif;
+  color: #624db0;
+}
+
+.section-content2 a:hover {
+  text-decoration: underline;
+}
+
   .section-img {
     text-align: center;
   }
