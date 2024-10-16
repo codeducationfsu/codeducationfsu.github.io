@@ -1,14 +1,111 @@
+/* the top header for the page */
+.contact-header {
+    margin: 7%;
+    margin-bottom: 5%;
+  }
+  
+  .contact-header h1 {
+    font-size: 45px;
+  }
+  
+  /*the outer yellow background*/
+  .contact-bg {
+    background: linear-gradient(to bottom,
+        white 0%,
+        white 20%,
+        #fdc40b 20%,
+        #fdc40b 100%);
+  }
+  
+  .container{
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 1% 5% 1% 9%;
+    margin: 2% 0 2% 0;
+    width: 85%;  
+    background: linear-gradient(to bottom,
+    white 0%,
+    white 20%,
+    #fdc40b 20%,
+    #fdc40b 100%);
+}
 
-.testalign{
-    text-align: right;
+  /* css for main section of home page */
+  .section {
+      left: 0;
+      right: 0;
+      margin: 3%;
+      padding: 10px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+  /*the inner white shape with rounded corners and a black border*/
+  .inSection {
+      padding: 2%;
+      border: 1px solid black;
+      border-radius: 15px;
+      float: center;
+      background: white;
+    }
+  
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  
+  .section-content,
+  .section-img {
+      flex: 1;
+      min-width: 300px;
+      margin: 10px;
     }
     
-
-.testalign p{
-        right: 20%;
-        }
-        
-            
-.testalign2{
-    text-align: left;
-}
+    .section-content2 {
+      flex: 1;
+      min-width: 300px;
+      margin: 10px;
+    }
+    
+    .section-content {
+      text-align: left;
+      margin-right: 5%;
+    }
+    
+    .section-content2 {
+      text-align: right;
+    }
+    
+  .section-content a {
+    font-weight: 300;
+    font-family: "Open sans", sans-serif;
+    color: #624db0;
+  }
+  
+  .section-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .section-content2 a {
+    font-weight: 300;
+    font-family: "Open sans", sans-serif;
+    color: #624db0;
+  }
+  
+  .section-content2 a:hover {
+    text-decoration: underline;
+  }
+  
+    .section-img {
+      text-align: center;
+    }
+    
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      max-height: 250px;
+      /* Adjusted for better fit */
+    }
