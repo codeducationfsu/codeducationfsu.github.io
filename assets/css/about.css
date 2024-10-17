@@ -143,6 +143,24 @@ html {
 }
 
 
+.bullet-point, .bullet-point2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; 
+  margin-bottom: 15px;
+}
+
+.bullet-point img, .bullet-point2 img {
+  max-width: 16px;  /* Fixed size */
+  max-height: 16px; /* Fixed size */
+  margin-right: 5px; /* Slight margin to ensure proper spacing */
+}
+
+.bullet-point p, .bullet-point2 p {
+  margin: 0;
+}
+
+
 .board-section {
     margin: 40px 0;
     padding: 0 20px;
