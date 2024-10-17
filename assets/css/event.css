@@ -113,7 +113,7 @@ mark {
   .banner {
     z-index: 1;
     text-align: center;
-    background-color: white;
+    background-color: #624db0;
   }
   
   .banner img {
@@ -210,6 +210,7 @@ mark {
 
 .event-details span {
     margin-right: 8px; 
+    font-size: 1.2em;
 }
 
 .eventier {
@@ -243,7 +244,8 @@ mark {
   
   .eventier-content {
     flex: 2; 
-    padding: 20px; 
+    padding: 20px;
+     
   }
   
   .eventier-content h2 {
@@ -259,7 +261,7 @@ mark {
   .eventier-details {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 15px 0 0;
   }
   
   .eventier-details li {
