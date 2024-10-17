@@ -168,6 +168,10 @@ html {
     text-align: center;
     font-weight: bold;
   }
+
+  .eboard-member p {
+    text-align: left;
+  }
   
   
   .eboard-section {
@@ -191,50 +195,47 @@ html {
   
   .board-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-gap: 10px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
   }
   
   /* Individual grid item */
   .board-member {
     background-color: white;
+    max-width: 200px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     border-radius: 15px;
     box-shadow:  6px 6px ;
     border: 2px solid black;
+    transition: none;
+    margin: 0 auto;
   }
   
   .board-member img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
+    display: block;
+    margin: 0 auto; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
   }
 
-  .description {
-    display: none; 
-}
-
-.board-member:hover .description {
-  display: block; 
-}
-
-.board-member:hover {
-  transform: scale(1.05); 
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
+ 
   
   .board-member h3 {
     margin: 10px 0;
     color: black;
+    text-align: left;
   }
   
   .board-member p {
     color: black;
+    text-align: left;
   }
   
 
