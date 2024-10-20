@@ -1,111 +1,304 @@
-/* the top header for the page */
-.contact-header {
-    margin: 7%;
-    margin-bottom: 5%;
-  }
-  
-  .contact-header h1 {
-    font-size: 45px;
-  }
-  
-  /*the outer yellow background*/
-  .contact-bg {
-    background: linear-gradient(to bottom,
-        white 0%,
-        white 20%,
-        #fdc40b 20%,
-        #fdc40b 100%);
-  }
-  
-  .container{
-    left: 0;
-    right: 0;
-    align-items: center;
-    padding: 1% 5% 1% 9%;
-    margin: 2% 0 2% 0;
-    width: 85%;  
-    background: linear-gradient(to bottom,
-    white 0%,
-    white 20%,
-    #fdc40b 20%,
-    #fdc40b 100%);
+html {
+  height: 100%;
+  width: 100%;
 }
 
-  /* css for main section of home page */
-  .section {
-      left: 0;
-      right: 0;
-      margin: 3%;
-      padding: 10px 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+:root {
+  --clr-1: #f4f4f4;
+  --clr-3: #fdc40b;
+  --clr-4: #624db0;
+  --clr-5: #3e246e;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body p {
+  font-weight: 270;
+  font-family: "Open sans", sans-serif;
+}
+
+/* font */
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* highlight */
+mark {
+  background-color: var(--clr-3);
+  margin: 3px;
+}
+
+mark2 {
+  background-color: var(--clr-4);
+  margin: 3px;
+}
+
+a {
+  color: black;
+  text-align: center;
+  text-decoration-color: black;
+}
+
+li {
+  margin: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5%;
+  top: 0;
+  left: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--clr-4);
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+.header {
+  text-align: center;
+  background-color: white;
+  padding: 1%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.header img {
+  z-index: 4;
+  width: 50px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  left: 4%;
+  position: fixed;
+}
+
+.bottom-left {
+  z-index: 2;
+  font-family: "Roboto";
+  position: absolute;
+  left: 3%;
+  top: 55%;
+  bottom: 45%;
+  color: white;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.banner {
+  z-index: 1;
+  text-align: center;
+  background-color: white;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 550px;
+  /* Adjusted for better fit */
+  object-fit: cover;
+}
+
+.purple-highlight {
+  background-color: var(--clr-4);
+  color: white; 
+  padding: 2px 4px; 
+  border-radius: 3px; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  width: 95%;
+  padding: 20px;
+  margin: 4%;
+    flex-grow: 1;
+    border-radius: 17px;
+    box-shadow:  8px 8px;
+    border: 1px solid black;
+    background-color: white;
+    margin-bottom: 6%;
+}
+
+/* Float 3 columns side by side */
+.card-column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.member-table{
+    width: 28%;
+    margin: 1.5%;
+float: left;
+ display: table-column;
+}
+
+.eboard-section {
+  background-color: #fdc40b;
+  padding: 1% 6% 6% 10%;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  float: left;
+}
+
+.eboard-section h2 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.board-section {
+  padding: 1% 6% 6% 14%;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  float: left;
+}
   
-  /*the inner white shape with rounded corners and a black border*/
-  .inSection {
-      padding: 2%;
-      border: 1px solid black;
-      border-radius: 15px;
-      float: center;
-      background: white;
-    }
-  
-    .section:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-  
-  .section-content,
-  .section-img {
-      flex: 1;
-      min-width: 300px;
-      margin: 10px;
-    }
-    
-    .section-content2 {
-      flex: 1;
-      min-width: 300px;
-      margin: 10px;
-    }
-    
-    .section-content {
-      text-align: left;
-      margin-right: 5%;
-    }
-    
-    .section-content2 {
-      text-align: right;
-    }
-    
-  .section-content a {
-    font-weight: 300;
-    font-family: "Open sans", sans-serif;
-    color: #624db0;
-  }
-  
-  .section-content a:hover {
-    text-decoration: underline;
-  }
-  
-  .section-content2 a {
-    font-weight: 300;
-    font-family: "Open sans", sans-serif;
-    color: #624db0;
-  }
-  
-  .section-content2 a:hover {
-    text-decoration: underline;
-  }
-  
-    .section-img {
-      text-align: center;
-    }
-    
-    .section img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      max-height: 250px;
-      /* Adjusted for better fit */
-    }
+.board-section h2 {
+  font-size: 50px;
+  color: black;
+  margin-top: 125px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card img {
+    margin: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.bullet-point img, .bullet-point2 img {
+  max-width: 16px;  /* Fixed size */
+  max-height: 16px; /* Fixed size */
+  margin-right: 5px; /* Slight margin to ensure proper spacing */
+  border: none;
+}
+
+.bullet-point p, .bullet-point2 p {
+  margin: 0;
+}
+
+
+.highlight {
+  background-color: var(--clr-3);
+  padding: 0 5px; 
+  display: inline-block; 
+}
+
+.who-we-are-wrapper {
+background: linear-gradient(to bottom,
+ transparent 25%, 
+ var(--clr-4) 25%); /* Gradient background */
+padding: 20px;
+}
+
+.who-we-are {
+  background-color: #f9f9f9;
+  padding: 60px;
+  padding-left: 80px;
+  margin: 6%;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+
+.who-we-are h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.who-we-are p {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-codeed-logo {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start; /* This moves the logo up */
+}
+
+.contact-codeed-logo img {
+  top: 3%;
+  width: 30%;  
+  display: block;
+  height: auto;
+  margin-top: -370px;
+  margin-right: 60px;
+}
+
+.contact {
+background-color: #151515;
+color: white;
+padding: 40px 20px;
+text-align: center;
+}
+
+.contact-icons {
+position: absolute;
+bottom: 20px;
+right: 20px;
+display: flex;
+gap: 10px;
+margin-top: auto;
+}
+
+.contact-icons img {
+height: 30px;
+}
