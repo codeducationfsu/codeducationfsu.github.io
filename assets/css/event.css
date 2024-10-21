@@ -323,3 +323,27 @@ mark {
     padding: 10px;
     border-radius: 5px;
   }
+  details { 
+    user-select: none; 
+    margin: 3%;
+     } 
+    details>summary span.icon {
+     width: 24px;
+     height: 24px;
+     transition: all 0.6s;
+     margin-left: auto;
+     }
+     details[open] summary span.icon
+     {
+     transform: rotate(360deg);
+     }
+     summary {
+     color: black;
+     display: flex;
+     Cursor: pointer;
+     font-size: 45px;
+     }
+     Summary::-webkit-details-
+    marker {
+     display: none; 
+    }
