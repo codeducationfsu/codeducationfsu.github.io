@@ -212,7 +212,7 @@ mark {
 
 .eventier {
     display: flex;
-    width: 60%; 
+    width: 55%; 
     box-shadow: 6px 6px;
     border: 1px solid black;
     border-radius: 15px;
@@ -229,12 +229,11 @@ mark {
   
   .eventier-image {
     flex: 1;
-    max-width: 40%; 
+    max-width: 50%; 
   }
   
   .eventier-image img {
-    width: 100%; 
-    height: auto; 
+    height: 250px; 
     object-fit: cover;
     display: block;
   }
@@ -242,13 +241,12 @@ mark {
   .eventier-content {
     flex: 2; 
     padding: 20px;
-     
   }
   
   .eventier-content h2 {
     margin: 0 0 10px;
     margin-top: 2%;
-    font-size: 1.8em; 
+    font-size: 1.6em; 
   }
   
   .eventier-content p {
@@ -331,7 +329,7 @@ mark {
 
   details { 
     user-select: none; 
-    margin: 3%;
+    margin: 0 3% 0 3%;
      } 
 
     details>summary span.icon {
@@ -341,18 +339,19 @@ mark {
      margin-left: auto;
      }
 
-     .details[open] summary span.icon {
+     details[open] summary span.icon {
      transform: rotate(360deg);
      }
 
-     .summary {
+     summary {
      color: black;
      display: flex;
      cursor: pointer;
-     font-size: 45px;
-     }
+     font-size: 25px;
+     margin-left: 10%;
+    }
 
-     .summary::-webkit-details-marker {
+     summary::-webkit-details-marker {
      display: none; 
     }
 
@@ -363,21 +362,21 @@ mark {
 .calender {
 background-color: white;
 padding: 10x;
-width: 400px;
 }
 iframe {
 border-radius: 15px;
 box-shadow: 6px 6px;
+margin: 40px;
 border: none;
-width: 350px;
-height: 400px;
+width: 450px;
+height: 450px;
 margin-top: 15px;
 margin-left: 30px;
 text-align: left;
 }
 .WrapBottom {
 background: linear-gradient(to bottom, transparent 25%, #9894d4 25%); /* Gradient background */
-padding: 20px;
+padding: 0px 20px 20px 20px;
 }
 
 .BottomEventR {
