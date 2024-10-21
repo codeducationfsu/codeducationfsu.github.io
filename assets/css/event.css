@@ -122,51 +122,65 @@ mark {
     /* Adjusted for better fit */
     object-fit: cover;
   }
-  
-  /* css for events cards on home page */
-  .container {
-    left: 0;
-    right: 0;
-    align-items: center;
-    padding: 1% 5% 1% 9%;
-  }
-  
-  .container h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .container p {
-    margin-left: 2%;
-  }
-  
-  .icons {
-    max-width: 100%;
-    height: auto;
-    max-height: 250px;
-  }
-  
-  .container img {
-    max-width: 100%;
-    height: auto;
-    max-height: 250px;
+
+  /* places text on top of image banner */
+.bottom-left {
+  z-index: 2;
+  font-family: "Roboto";
+  position: absolute;
+  left: 3%;
+  top: 55%;
+  bottom: 45%;
+  color: white;
+  font-size: 45px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  padding-bottom: 3%;
+  width: fit-content;
+  background-color: var(--clr-4);
+}
+
+.main{
+  width: 50%;
+  padding: 2%;
+  margin: 0;
   }
 
-  
+  .main h3{
+    margin: 0;
+    color: white;
+    text-align: justify;
+    font-weight: 500;
+  }
+  .card-head{
+    width: 80%;
+    float: right;
+  }
+
 .card {
     display: flex;
-    width: 400px; 
+    width: 80%; 
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-    background-color: #ffd94f;
+    border: 1px solid black;
+    box-shadow: 6px 6px;
+    background-color: var(--clr-3);
     color: #000;
     transition: box-shadow 0.3s ease; 
-    margin: 20px auto; 
+    border: 1px solid black;
+    margin-top: 20px;
+    float: right;  
 }
 
 .card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 1); 
+  box-shadow: 8px 8px;
 }
 
 .card-image {
@@ -192,30 +206,13 @@ mark {
 }
 
 .card-content p {
-    font-size: 0.8em; 
-    margin-bottom: 8px; 
-}
-
-.event-details {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.event-details li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.event-details span {
-    margin-right: 8px; 
-    font-size: 1.2em;
+    font-size: 1em; 
+    margin-bottom: 12px; 
 }
 
 .eventier {
     display: flex;
-    width: 670px; 
+    width: 60%; 
     box-shadow: 6px 6px;
     border: 1px solid black;
     border-radius: 15px;
@@ -223,11 +220,11 @@ mark {
     background-color: #FFFFFF;
     color: #000;
     transition: box-shadow 0.3s ease; 
-    margin: 20px auto; 
+    margin: 4% auto; 
   }
   
   .eventier:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 1); 
+    box-shadow: 8px 8px;
   }
   
   .eventier-image {
@@ -250,7 +247,8 @@ mark {
   
   .eventier-content h2 {
     margin: 0 0 10px;
-    font-size: 1.5em; 
+    margin-top: 2%;
+    font-size: 1.8em; 
   }
   
   .eventier-content p {
@@ -273,9 +271,37 @@ mark {
   .eventier-details span {
     margin-right: 10px; 
   }
+  
 
-  title {
-    font-size: 45px;
+  .event-date, .event-time , .event-location, .club-collab {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; 
+    margin-bottom: 5px;
+    width: 80%;
+    }
+  
+    .event-date img , .event-time img , .event-location img {
+    max-width: 20px;  /* Fixed size */
+    max-height: 20px; /* Fixed size */
+    margin-right: 5px; /* Slight margin to ensure proper spacing */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .club-collab img{
+    max-width: 35px;  /* Fixed size */
+    margin-right: 5px; /* Slight margin to ensure proper spacing */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .event-date p, .event-time p, .event-location p, .club-collab p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 550;
   }
   
   .contact {
@@ -302,48 +328,75 @@ mark {
     background-color: var(--clr-3);
     padding: 40px 20px;
   }
-  
-  /* Float 3 columns side by side */
-  .card-column {
-    float: left;
-    width: 30%;
-    padding: 0 10px;
-  }
 
-  /* places text on top of image banner */
-.bottom-left {
-    z-index: 2;
-    font-family: "Roboto";
-    position: absolute;
-    left: 3%;
-    top: 55%;
-    bottom: 45%;
-    color: white;
-    font-size: 45px;
-    padding: 10px;
-    border-radius: 5px;
-  }
   details { 
     user-select: none; 
     margin: 3%;
      } 
+
     details>summary span.icon {
      width: 24px;
      height: 24px;
      transition: all 0.6s;
      margin-left: auto;
      }
-     details[open] summary span.icon
-     {
+
+     .details[open] summary span.icon {
      transform: rotate(360deg);
      }
-     summary {
+
+     .summary {
      color: black;
      display: flex;
-     Cursor: pointer;
+     cursor: pointer;
      font-size: 45px;
      }
-     Summary::-webkit-details-
-    marker {
+
+     .summary::-webkit-details-marker {
      display: none; 
     }
+
+    .bigborder {
+    border: 1px solid black;
+}
+
+.calender {
+background-color: white;
+padding: 10x;
+width: 400px;
+}
+iframe {
+border-radius: 15px;
+box-shadow: 6px 6px;
+border: none;
+width: 350px;
+height: 400px;
+margin-top: 15px;
+margin-left: 30px;
+text-align: left;
+}
+.WrapBottom {
+background: linear-gradient(to bottom, transparent 25%, #9894d4 25%); /* Gradient background */
+padding: 20px;
+}
+
+.BottomEventR {
+background-color: white;
+padding: 60px;
+margin: 40px auto;
+max-width: 75%;
+text-align: center;
+border-radius: 15px;
+border: 1px solid black;
+}
+
+.BottomEventR img{
+text-align: center;
+padding: 20px 20px 0 20px;
+height: 30px;
+margin: 0;
+}
+
+.CalenderT {
+Background-color: #624db0
+}
