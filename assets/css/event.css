@@ -206,7 +206,7 @@ mark {
 }
 
 .card-content p {
-    font-size: 1em; 
+    font-size: .8em; 
     margin-bottom: 12px; 
 }
 
@@ -368,8 +368,7 @@ border-radius: 15px;
 box-shadow: 6px 6px;
 margin: 40px;
 border: none;
-width: 450px;
-height: 450px;
+width: 70%;
 margin-top: 15px;
 margin-left: 30px;
 text-align: left;
