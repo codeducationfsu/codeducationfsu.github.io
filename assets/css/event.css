@@ -271,7 +271,7 @@ mark {
   }
   
 
-  .event-date, .event-time , .event-location, .club-collab {
+  .event-date, .event-time , .event-location, .club-collab, .ig-post {
     display: inline-flex;
     align-items: center;
     gap: 5px; 
@@ -279,7 +279,7 @@ mark {
     width: 80%;
     }
   
-    .event-date img , .event-time img , .event-location img {
+    .event-date img , .event-time img , .event-location img, .ig-post img {
     max-width: 20px;  /* Fixed size */
     max-height: 20px; /* Fixed size */
     margin-right: 5px; /* Slight margin to ensure proper spacing */
@@ -296,7 +296,7 @@ mark {
     box-shadow: none;
   }
   
-  .event-date p, .event-time p, .event-location p, .club-collab p {
+  .event-date p, .event-time p, .event-location p, .club-collab p{
     margin: 0;
     font-size: 14px;
     font-weight: 550;
