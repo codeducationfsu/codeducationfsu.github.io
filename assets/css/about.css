@@ -1,6 +1,10 @@
-html {
+/* Global styles */
+html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -10,18 +14,44 @@ html {
   --clr-5: #3e246e;
 }
 
+/* Main body styles */
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
+  background-color: var(--clr-1);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 
-body p {
-  font-weight: 270;
-  font-family: "Open sans", sans-serif;
+li {
+  margin: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
-/* font */
+.header {
+  text-align: center;
+  background-color: white;
+  padding: 1%;
+}
+
+.header img {
+  width: 50px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+/* Font styles */
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -34,7 +64,12 @@ body p {
   font-style: normal;
 }
 
-/* highlight */
+body p {
+  font-weight: 270;
+  font-family: "Open sans", sans-serif;
+}
+
+/* Highlight */
 mark {
   background-color: var(--clr-3);
   margin: 3px;
@@ -43,31 +78,6 @@ mark {
 mark2 {
   background-color: var(--clr-4);
   margin: 3px;
-}
-
-a {
-  color: black;
-  text-align: center;
-  text-decoration-color: black;
-}
-
-li {
-  margin: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1.5%;
-  top: 0;
-  left: 0;
 }
 
 a:link {
@@ -89,41 +99,8 @@ a:active {
   color: black;
 }
 
-.header {
-  text-align: center;
-  background-color: white;
-  padding: 1%;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-
-.header img {
-  z-index: 4;
-  width: 50px;
-  border-radius: 50%;
-  margin: auto;
-  display: block;
-  left: 4%;
-  position: fixed;
-}
-
-.bottom-left {
-  z-index: 2;
-  font-family: "Roboto";
-  position: absolute;
-  left: 3%;
-  top: 55%;
-  bottom: 45%;
-  color: white;
-  font-size: 45px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
+/* Banner */
 .banner {
-  z-index: 1;
   text-align: center;
   background-color: white;
 }
@@ -131,137 +108,83 @@ a:active {
 .banner img {
   width: 100%;
   max-height: 550px;
-  /* Adjusted for better fit */
   object-fit: cover;
 }
 
+/* Text highlight */
 .purple-highlight {
   background-color: var(--clr-4);
-  color: white; 
-  padding: 2px 4px; 
-  border-radius: 3px; 
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.card {
+/* Cards */
+.card, .card2 {
   width: 95%;
-  padding: 20px;
-  margin: 3%;
-    flex-grow: 1;
-    border-radius: 17px;
-    box-shadow:  8px 8px;
-    border: 1px solid black;
-    background-color: white;
-    margin-bottom: 15%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  background-color: white;
 }
 
-.card img {
-  margin: 0;
-  top: 0;
+.card img, .card2 img {
   width: 100%;
   border-radius: 15px;
   border: 1px solid black;
-}
-
-.card2 {
-  width: 95%;
-  padding: 20px;
-  margin: 3%;
-    flex-grow: 1;
-    background-color: white;
-    margin-bottom: 15%;
-}
-
-.card2 img {
   margin: 0;
-  top: 0;
-  width: 100%;
-  border-radius: 15px;
-  box-shadow:  8px 8px;
-  border: 1px solid black;
 }
 
-/* Float 3 columns side by side */
 .card-column {
   float: left;
   width: 33.3%;
   padding: 0 5px;
 }
 
-.member-table{
-    width: 28%;
-    margin: 1.5%;
-float: left;
- display: table-column;
+/* Board and e-board sections */
+.eboard-section, .board-section {
+  padding: 2% 10%;
+  background-color: var(--clr-3);
 }
 
-.eboard-section {
-  position: relative;
-  background-color: #fdc40b;
-  padding: 1% 8% 6% 12%;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  float: left;
-}
-
-.eboard-section h2 {
-  font-size: 50px;
+.eboard-section h2, .board-section h2 {
+  font-size: 1.8rem;
   color: black;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
   text-align: center;
   font-weight: bold;
-  margin-left: -3%;
 }
 
 .board-section {
-  position: relative;
   padding: 1% 10% 3% 10%;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  float: left;
-}
-  
-.board-section h2 {
-  font-size: 50px;
-  color: black;
-  margin-bottom: 20px;
-  padding-top: 50px;
-  text-align: center;
-  font-weight: bold;
 }
 
+/* Bullet points */
 .bullet-point, .bullet-point2 {
   display: inline-flex;
   align-items: top;
-  gap: 5px; 
+  gap: 5px;
   margin-bottom: 15px;
-  }
+}
 
-.bullet-point img, .bullet-point2 img{
-  max-width: 16px;  /* Fixed size */
-  max-height: 16px; /* Fixed size */
-  margin-right: 5px; /* Slight margin to ensure proper spacing */
+.bullet-point img, .bullet-point2 img {
+  max-width: 16px;
+  max-height: 16px;
+  margin-right: 5px;
   border: none;
-  border-radius: 0;
-  box-shadow: none;
 }
 
 .bullet-point3 img {
-  max-width: 30px;  /* Fixed size */
-  max-height: 30px; /* Fixed size */
-  margin-right: 5px; /* Slight margin to ensure proper spacing */
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 5px;
   margin-bottom: 3%;
   margin-top: 2%;
   border: none;
-  border-radius: 0;
-  box-shadow: none;
 }
 
 .bullet-point p, .bullet-point2 p {
@@ -269,64 +192,20 @@ float: left;
   font-size: 15px;
 }
 
-
-.highlight {
-  background-color: var(--clr-3);
-  padding: 0 5px; 
-  display: inline-block; 
-}
-
+/* Who We Are */
 .who-we-are-wrapper {
-background: linear-gradient(to bottom,
- transparent 35%, 
- var(--clr-4) 35%); /* Gradient background */
-padding: 20px;
+  background: linear-gradient(to bottom, transparent 35%, var(--clr-4) 35%);
+  padding: 20px;
 }
 
 .who-we-are {
   background-color: #f9f9f9;
   padding: 30px;
-  padding-top: 50px;
   margin: 5% 12%;
   text-align: center;
   border-radius: 20px;
   border: 1px solid black;
 }
-
-.section {
-  left: 0;
-  right: 0;
-  padding-left: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.section-content {
-  text-align: left;
-  margin-right: 5%;
-  width: 50%;
-
-}
-
-.section-content,
-.section-img {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-  }
-
-  .section-img {
-    text-align: center;
-  }
-  
-  .section img {
-    max-width: 70%;
-    height: auto;
-    margin: 20px 0;
-    /* Adjusted for better fit */
-  }
 
 .who-we-are h2 {
   font-size: 2rem;
@@ -341,17 +220,45 @@ padding: 20px;
   text-align: left;
 }
 
+/* Section */
+.section {
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-content {
+  text-align: left;
+  margin-right: 5%;
+  width: 50%;
+}
+
+.section-content, .section-img {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.section-img {
+  text-align: center;
+}
+
+.section img {
+  max-width: 70%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Contact */
 .contact-codeed-logo {
   display: flex;
-  justify-content: flex-end; 
-  align-items: flex-start; /* This moves the logo up */
+  justify-content: flex-end;
 }
 
 .contact-codeed-logo img {
-  top: 3%;
-  width: 30%;  
-  display: block;
-  height: auto;
+  width: 30%;
   margin-top: -370px;
   margin-right: 60px;
 }
@@ -360,20 +267,73 @@ padding: 20px;
   position: relative;
   background-color: #151515;
   display: flex;
-color: white;
-padding: 25px;
-text-align: center;
+  color: white;
+  padding: 25px;
+  text-align: center;
 }
 
 .contact-icons {
   display: block;
-right:0;
-gap: 10px;
-margin-top: auto;
+  gap: 10px;
+  margin-top: auto;
 }
 
 .contact-icons img {
-  bottom: 30px;
-  right: inherit;
   height: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Navigation */
+  ul {
+    flex-direction: column;
+  }
+
+  .header img {
+    width: 40px;
+  }
+
+  /* Banner Image */
+  .banner img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  /* Section paddings */
+  .eboard-section, .board-section {
+    padding: 5%;
+  }
+
+  .eboard-section h2, .board-section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Card adjustments */
+  .card, .card2 {
+    padding: 10px;
+  }
+
+  /* Contact section adjustments */
+  .contact {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .contact-codeed-logo img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* Fix for stacking content vertically */
+  .section, .section-content, .section-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-content, .section-img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
